@@ -70,6 +70,8 @@ section > h3 {
 #about_me > div {
     display: flex;
     width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
@@ -222,7 +224,7 @@ button:hover {
 
 #arrow {
     animation: levitation 2.5s infinite linear;
-    float: right;
+    margin-left: 50%;
 }
 
 @keyframes levitation {
