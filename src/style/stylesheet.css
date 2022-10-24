@@ -69,6 +69,8 @@ section > h3 {
 
 #about_me > div {
     display: flex;
+    width: 1300px;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
@@ -129,7 +131,7 @@ section > h3 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 30%;
+    width: 400px;
     padding: 15px;
     box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
     -webkit-box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
@@ -196,7 +198,7 @@ button:hover {
     margin-right: auto;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 400px;
     align-content: center;
     margin-top: 15px;
     border: 1px solid #323949;
@@ -220,16 +222,17 @@ button:hover {
 
 #arrow {
     animation: levitation 2.5s infinite linear;
+    float: right;
 }
 
 @keyframes levitation {
     0% {
-        margin-top: 100px;
+        margin-top: 5%;
     }
     50% {
-        margin-top: 150px;
+        margin-top: 8%;
     }
     100% {
-        margin-top: 100px;
+        margin-top: 5%;
     }
 }
