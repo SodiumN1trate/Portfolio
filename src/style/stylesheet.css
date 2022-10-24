@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html, body {
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #3C4F76;
+    height: 60px;
+    font-size: 24px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
+    -webkit-box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
+    -moz-box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
+    z-index: 1;
+}
+
+header > a {
+    margin-left: 20px;
+}
+
+header > div {
+    display: flex;
+    gap: 20px;
+    margin-right: 100px;
+    align-items: center;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: .2s;
+}
+
+header > div > a:hover {
+    transform: scale(1.1);
+}
+
+
+main {
+    margin: 0;
+    height: 100vh;
+    overflow-y: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-snap-align: start;
+    padding: 3em;
+    height: calc(100vh -  6em);
+    background-color: #383F51;
+}
+
+section > h3 {
+    font-size: 3em;
+}
+
+#about_me > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#about_me > div > img {
+    border-radius: 10px;
+    box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
+    -webkit-box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
+    -moz-box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
+    -webkit-box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
+    -moz-box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
+    width: 200px;
+    border: 1px solid #323949;
+    border-radius: 10px;
+    filter: grayscale(1);
+    cursor: pointer;
+    transition: .3s;
+    padding: 5px;
+}
+
+.card:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+#projects > .cards > .card {
+    width: auto;
+    padding: 0;
+    filter: grayscale(0);
+}
+
+#projects > .cards > .card > img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#contacts > .cards > .card {
+    padding-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 30%;
+    padding: 15px;
+    box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
+    -webkit-box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
+    -moz-box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
+    border: 1px solid #323949;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fullname {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.fullname > input {
+    width: 100%;
+}
+
+input[type=text], input[type=email], textarea, button {
+    border: none;
+    outline: none;
+    padding: 15px;
+    background-color: #40485b;
+    border: 1px solid #323949;
+    border-radius: 6px;
+    box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
+    -webkit-box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
+    -moz-box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+button {
+    padding: 10px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    align-content: center;
+    margin-top: 15px;
+    border: 1px solid #323949;
+    border-radius: 6px;
+    box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
+    -webkit-box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
+    -moz-box-shadow: -1px 3px 24px -11px rgba(0,0,0,0.55);
+    padding: 5px;
+}
+
+.social > a {
+    filter: grayscale(1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.social > a:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+#arrow {
+    animation: levitation 2.5s infinite linear;
+}
+
+@keyframes levitation {
+    0% {
+        margin-top: 100px;
+    }
+    50% {
+        margin-top: 150px;
+    }
+    100% {
+        margin-top: 100px;
+    }
+}
